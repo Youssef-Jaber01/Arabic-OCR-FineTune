@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+
+# Runtime / data
+Images/
+LoRA adapter/
+
+# Future-proofing (even if not used now)
+.env
+.venv/
+*.log
