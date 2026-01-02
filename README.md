@@ -22,3 +22,10 @@ The system extracts Arabic text from images and exposes the functionality throug
 Below is an example request and response using the `/ocr` endpoint via the FastAPI Swagger UI.
 
 ![Arabic OCR example](ocr-response-example.png)
+
+```bash
+curl -X 'POST' \
+  'http://127.0.0.1:8000/ocr' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@12.jpg;type=image/jpeg'
